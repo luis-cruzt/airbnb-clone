@@ -3,7 +3,7 @@ import Header from '../components/Header'
 function Banner() {
     return (
         <div className="relative h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
-            <Header/>
+            <Header isTransparent={true}/>
             <Image
                 src="/hero.webp"
                 layout="fill"

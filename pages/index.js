@@ -14,12 +14,12 @@ export default function Home({exploreData, cardsData}) {
       </Head>      
       <Banner/>
 
-      <main className="max-w-7xl mx-auto px-7 sm:px-16">
+      <main className="max-w-7xl mx-auto px-7 sm:px-16 mb-32">
         <section className="pt-20">
           <h2 className="font-semibold text-4xl pb-5">Explore Nearby</h2>
 
         {/* Pull some data from a server - API endpoints */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {exploreData?.map(item => (
           <SmallCard key={item.img} img={item.img} distance={item.distance} location={item.location}/>
         ))}
